@@ -6,6 +6,10 @@
     background-repeat: repeat-y;
     background-position: center;
     background-size: auto;
+    h2{
+        text-align: center;
+        margin-bottom: 146px;
+    }
 }
 
 .timeline-block__item{
@@ -33,6 +37,36 @@
      }
      @media(min-width: 768px){
          width: 50%;
+         .timeline-item__text{
+            display: flex;
+            flex-direction: column;
+            .timeline-item__subtitle {  margin-bottom: 15px;
+                       font-size: 26px;
+                        font-family: "Mplus1p";
+                        color: rgb(0, 0, 0);
+                        font-weight: 700;
+                        line-height: 1.2;
+                        position: absolute;
+                      
+                }
+            
+                .timeline-item__text-1 {
+                    margin-bottom: 17px;
+                        font-size: 18px;
+                                color: rgb(0, 0, 0);
+                        line-height: 1.2;
+                        
+                      font-weight: 500;                  
+                }
+                .timeline-item__text-time {
+                         font-size: 18px;
+                        color: rgb(0, 0, 0);
+                        font-weight: 700;
+                        line-height: 1.2;
+                      
+                      
+                }
+            }
          &:first-of-type::before {
             content: "";
             width: 10px;
@@ -95,6 +129,3 @@
       
 }
 
-.timeline-item__text{
-
-}
