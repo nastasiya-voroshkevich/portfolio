@@ -1,13 +1,16 @@
 .project-card {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     display: block;
     max-width: 360px;
     padding-bottom: 20px;
-   
+   @media (min-width:768px) {
+    margin-bottom: 20px;
+       max-width: 339px;
+        }
+ 
     transition: .5s;
     overflow: hidden;
-  
-    &:hover {
+       &:hover {
     
          .project-card-title{
             h3 {color: red;
@@ -56,32 +59,53 @@
 }
 
 
-.big {
-    max-width: 555px; 
+.big { 
+    max-width: 360px;
+
+@media (min-width: 768px) {
+    margin-bottom: 25px;
+    max-width: 339px;
+}
+
+@media (min-width: 1200px) {
+       max-width: 555px; 
 
     .project-card__img {
         button{
         transform: translate(-500px,-50%);
       }
     }
+    }
     .project-card-title{
         h3 {
-                font-size: 32px;
+                font-size: 22px;
                 color: rgb(0, 0, 0);
                 font-weight: 700;
                 line-height: 1.2;
+                @media (min-width: 768px) {
+                    font-size: 24px;
+                }
+                @media (min-width: 1200px) {
+                    font-size: 32px;  
+                }
                 }
 
                 p{
-                    font-size: 22px;
+                    font-size: 16px;
                    color: rgb(0, 0, 0);
                    font-weight:300 ;
                    line-height: 1.2;
+                   @media (min-width: 768px) {
+                    font-size: 18px;
+                }
+                @media (min-width: 1200px) {
+                    font-size: 22px;  
+                }
                             }       
                         }
 }
 .project-card__img {
-    margin-bottom: 15px;
+    margin-bottom: 27px;
     position: relative;
     button {
         
@@ -93,6 +117,7 @@
        
         transform: translate(-350px, -50%);
     }
+
     &::after{
         content: "";
         z-index: 1;
@@ -105,8 +130,12 @@
         background-color: rgba(255, 166, 0, 0.5);
         transform: translateX(100%);
     }
-    
-
+  @media (min-width: 768px) {
+      margin-bottom: 35px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+}
 }
 
 .project-card-title {
@@ -117,11 +146,26 @@ h3 {       margin-bottom: 10px;
         line-height: 1.2;
             
 }
-p{
-         font-size: 20px;
-        font-weight: 300;
-        color: rgb(0, 0, 0);
-        line-height: 1.2;
+p{  
+     font-size: 16px;
+     font-weight: 300;
+     color: rgb(0, 0, 0);
+     line-height: 1.2;
+ @media (min-width: 768px) {
+    font-size: 18px;
+ }
+@media (min-width: 1200px) {
+         font-size: 20px;}
             
 }
+}
+
+.project-card__tablet {
+    display: table;
+    @media (min-width: 768px) {
+        display: none;
+    }
+    @media (min-width: 1200px) {
+        display: table;
+    }
 }

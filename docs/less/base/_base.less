@@ -125,8 +125,11 @@ button {
   }
 
   .btn {
+    display: none;
+    @media (min-width: 1200px) {
+        display: table;
         display: inline-block;
-        height: 64px; 
+         height: 64px; 
         line-height: 64px;       
         font-size: 22px;
         font-weight: 700;    
@@ -135,7 +138,7 @@ button {
         padding-right: 35px;
         border-radius: 30px;
         background-color: rgb(251, 220, 77);
-          z-index: 5;
+          z-index: 43;
           outline: none;
         text-align: center;
         &:hover {
@@ -144,6 +147,7 @@ button {
         &:active {
             background-color: #e1bc10;
         }
+    }
 }
 
   .social-icons {
