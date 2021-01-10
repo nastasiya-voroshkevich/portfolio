@@ -62,17 +62,23 @@
   line-height: 1.2;
   text-align: right;
   z-index: 9;
-
+  &:focus{
+  outline-style: dotted;
+  outline-width: 3px;
+  outline-color: rgb(234, 115, 109);
+   
+  
+}
   &:last-child {
     margin-right: 0;
   }
   &::after,
   &::before {
     content: "";
-    height: 10px;
+    height: 6px;
     width: 0%;
     position: absolute;
-    background-color: red;
+    background-color: #fbdc4d;
 
     bottom: 1px;
     z-index: -4;
@@ -216,18 +222,13 @@
       color: rgb(57, 63, 71);
       line-height: 1.667;
       text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
- span {
-   display:none;
- }
 
   @media (min-width:1200px) {   
     font-size: 24px;
     color: rgb(57, 63, 71);
     line-height: 1.5;
     text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
-  span {
-    display: table;
-  }}
+ }
   }
 }
 .header-img {
