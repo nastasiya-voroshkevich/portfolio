@@ -79,20 +79,6 @@
         line-height: 20px;
          font-weight: 500;                  
 }
-&:first-of-type::before {
-    content: "";
-    width: 10px;
-   position: absolute;
-    top: 0;
-    right: -2px;
-    bottom: 150px;
-    transform: translateY(-150%);  
-    background-color: rgb(225, 238, 244);
-        width: 4px;
-        height: 57px;
-        
-      
- }
 
      @media(min-width: 768px){
          width: 50%;
@@ -128,6 +114,22 @@
                 .timeline-item__text-time {
                          font-size: 18px;
             }
+            &:first-of-type::before {
+                content: "";
+                width: 10px;
+               position: absolute;
+                top: 0;
+                right: -2px;
+                bottom: 150px;
+                transform: translateY(-150%);  
+                background-color: rgb(225, 238, 244);
+                    width: 4px;
+                    height: 57px;
+                    
+                  
+             }
+            
+
         }
       
            
