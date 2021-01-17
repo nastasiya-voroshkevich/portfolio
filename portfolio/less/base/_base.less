@@ -1,0 +1,225 @@
+*{ box-sizing: border-box;}
+
+html {scroll-behavior: smooth;}
+
+html, body{ margin: 0; 
+    padding: 0;
+    font-family: 'M PLUS 1p', sans-serif;
+font-weight: 400;
+
+}
+.noscroll {
+        overflow: hidden;
+    }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    display: none;
+  
+}
+.active {
+    display: block;
+}
+
+a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+::selection {
+    background: #fbdc4d; /* Safari */
+    }
+    ::-moz-selection {
+    background: #fbdc4d; /* Firefox */
+    }
+    
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+svg {
+    max-width: 100%;
+}
+button, input, textarea {
+    outline: none;
+}
+input[type="radio"],
+input[type="submit"],
+input[type="checkbox"]{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+textarea {
+    resize: none;
+    outline: none;
+}
+button {
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.container {
+  /*  max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px;
+    @media(min-width: 768px) {
+        padding: 0px 30px;
+    }
+    @media(min-width:1200px){
+        padding: 0px;
+    }*/
+    width: 100%;
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media(min-width:576px){
+        max-width: 540px;
+    }
+    @media(min-width: 768px){
+        max-width: 738px;
+    }
+    @media(min-width:992px) {
+        max-width: 915px;
+    }
+    @media(min-width:1200px){
+        max-width: 1140px;
+        padding: 0;
+    }
+}
+
+.bottom-line {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    z-index: 0;
+    &::after {
+      content: "";
+      height: 15px;
+      width: 103%;
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      z-index: -5;
+      background-color: #fbdc4d;
+    }
+    
+  }
+
+  .btn {
+      display: inline-block;
+      height: 64px; 
+      line-height: 64px;       
+      font-size: 22px;
+      font-weight: 700;    
+      color: rgb(0, 0, 0);
+      padding-left: 35px;
+      padding-right: 35px;
+      border-radius: 30px;
+      background-color: rgb(251, 220, 77);
+      z-index: 5;
+      outline: none;
+      text-align: center;
+      &:hover {
+          background-color: #ffd200;
+        }
+        &:active {
+            background-color: #e1bc10;
+        }
+       
+    }
+
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 293px;
+    a {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+  
+}
+.github-connect {
+    
+     color: #000000;
+     &:hover {
+        border: 5px solid #000000;
+        box-shadow: 0 0 15px #ffd200;
+        transition: all 0.5s ease;
+      }
+ }
+
+ .telegram-connect {
+   
+  background-color:#ffffff;
+  color:  #039be5;
+  &:hover {
+    border: 5px solid #039be5;
+    box-shadow: 0 0 15px #ffd200;
+    transition: all 0.5s ease;
+  }
+ }
+ .vk-connect {
+    &:hover {
+        border: 5px solid #4d76a1;
+        transition: all 0.5s ease;
+        box-shadow: 0 0 15px #ffd200;
+      }  
+ }
+ .facebook-connect {
+    &:hover {
+        border: 5px solid #3b5998;
+        transition: all 0.5s ease;
+        box-shadow: 0 0 15px #ffd200;
+      } 
+ }
+ #backTop {
+    display: block;
+    display: table;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fbdc4d;
+    background-color:#ffffff;
+    position: fixed;
+    bottom: 30px;
+    right: 20px; 
+    z-index: 15px;
+    @media (min-width: 1140px) {
+        display: none !important;
+        }
+}
+
+.none {
+    display: none;
+}

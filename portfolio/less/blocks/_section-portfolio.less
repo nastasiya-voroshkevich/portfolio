@@ -1,0 +1,110 @@
+.section-portfolio {
+    padding-top: 46px;
+    padding-bottom: 18px;
+    background-color: #f4f8f9;
+    @media (min-width:768px){
+        
+        padding-top: 66px;
+    }
+    @media (min-width:1200px){
+        
+        padding-top: 80px;
+    }
+}
+
+.title-2{
+    font-size: 42px;
+    font-weight: 800;
+    span::after {
+        height: 12px;
+        left: -3px;
+        bottom: 9px;
+}
+@media (min-width: 768px) {
+    margin-bottom: 51px;
+        font-size: 52px;
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        span::after {
+            height: 15px;
+            left: -6px;
+            bottom: 8px;
+  }  }
+  @media (min-width: 1200px) {
+    font-size: 64px; 
+    margin-bottom: 66px;
+  }
+}
+
+
+.project-menu {
+    margin-bottom: 40px;
+    display: flex;
+    @media (min-width:768px) {
+        margin-bottom: 50px;
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 52px;   
+    }
+}
+
+.project-menu__item {
+    display: none;
+    @media (min-width:768px) {
+        display: table;
+    margin-right: 40px;
+         font-size: 24px;
+       font-weight: 700;       
+        line-height: 1.2;
+         color: rgb(143, 165, 174); 
+         &:last-child{
+             margin-right: 0;
+         }
+        } 
+        @media (min-width:1200px) {
+            font-size: 28px;  
+            margin-right: 45px;
+        }   
+}
+
+.home {
+    color: rgb(0, 0, 0);
+} 
+
+#portfolio-projects, .portfolio-block {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    @media (min-width:768px){
+    justify-content: space-between;
+        
+    }
+    @media (min-width: 992px) {
+        max-width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media(min-width:1200px){
+        max-width: 1140px;
+        padding: 0;
+    }
+ }
+
+
+.project-container-wrapp {
+    
+}
+.project-card__link {
+         font-size: 20px;
+         color: rgb(3, 155, 229);
+        text-decoration: underline;
+        line-height: 1.2;
+        text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
+       font-weight: 400;
+       @media (min-width:768px) {
+              
+       }
+       @media (min-width:1200px) {
+           display: none;
+       }
+}
